@@ -1,5 +1,25 @@
 import java.util.*;
 
+class Faculty extends Student {
+	String imeFax;
+	List<Student> studenti = new List<Student>();
+
+	public Faculty(String imeFax, List<Student> studenti) {
+		this.imeFax = imeFax;
+	}
+
+	public void setStudenti(List<Student> studenti) {
+		this.studenti = studenti;
+	}
+
+	public double prosekKrediti
+	{
+
+	}
+};
+
+
+
 class Student {
 	String index;
 	String firstName;
@@ -68,8 +88,6 @@ class Student {
 	}
 
 	public static void main(String[] args) {
-
-		ArrayList<Integer> grades = new ArrayList<Integer>();
 
 	}
 }
