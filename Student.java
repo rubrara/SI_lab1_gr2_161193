@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Student {
 	String index;
 	String firstName;
@@ -13,5 +15,12 @@ class Student {
 
 	public int ECTSCredits() {
 		//TODO
+	}
+	
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> grades = new ArrayList<Integer>();
+		
+		
 	}
 }
