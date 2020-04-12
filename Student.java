@@ -1,26 +1,75 @@
-import java.util.ArrayList;
+import java.util.*;
 
 class Student {
 	String index;
 	String firstName;
 	String lastName;
 
-	//TODO constructor
+	List<Integer> grades = new List<Integer>();
 
-	//TODO seters & getters
+	public Student(String index, String firstName, String lastName, List<Integer> grades) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.index = index;
+		this.grades = grades;
+	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	public void setIndex(String index) {
+		this.index = index;
+	}
+
+	public void setGrades(List<Integer> grades) {
+		this.grades = grades;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public String getIndex() {
+		return index;
+	}
+
+	public List<Integer> getGrades() {
+		return grades;
+	}
 
 	public double getAverage() {
-		//TODO
+		int counter = 0;
+		double sum = 0;
+		for (int i = 0; i < grades.size(); i++) {
+			sum += grades.get(i);
+			counter++;
+			i++;
+		}
+
+		return sum / counter;
+
 	}
 
 	public int ECTSCredits() {
-		//TODO
+
+		int brojNaPolozeni = grades.size();
+
+		return brojNaPolozeni * 6;
+
 	}
-	
+
 	public static void main(String[] args) {
-		
+
 		ArrayList<Integer> grades = new ArrayList<Integer>();
-		
-		
+
 	}
 }
